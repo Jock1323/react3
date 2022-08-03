@@ -1,0 +1,33 @@
+.item{
+    position:relative;
+    border-radius: 5px;
+    width:90%;
+    animation: animate .3s linear;
+}
+.item::after{
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: 0;
+    right: -10px;
+    border-bottom: 10px solid #198754;
+    border-right: 10px solid transparent;
+    border-left: 10px solid #198754;
+    border-top: 10px solid transparent;
+}
+.item__btn{
+    background-color: rgba(255, 0, 0, 0.952);
+    color: #fff;
+}
+@keyframes animate{
+    from{
+        transform: translate(100%,50%);
+        visibility: hidden;
+        opacity: 0;
+    }
+    to{
+        transform: translate(0,0);
+        visibility: visible;
+        opacity: 1;
+    }
+}
