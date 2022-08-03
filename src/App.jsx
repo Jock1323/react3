@@ -27,8 +27,8 @@ return (
     <div>
       <form className="my-3 bg-light w-50 p-3 me-5 input-box" onSubmit={(e)=>addItem(e)}>
         <h1 className="mt-2 text-center text-success mb-3">Programming Languages</h1>
-        <input type="text" className="form-control  p-2 mb-4" value={name} onChange={(e)=>setName(e.target.value)} />
-        <input type="text" className="form-control  p-2 mb-4" value={type} onChange={(e)=>setType(e.target.value)}/>
+        <input type="text" placeholder="Example:javascript" className="form-control  p-2 mb-4" value={name} onChange={(e)=>setName(e.target.value)} />
+        <input type="text" placeholder="Example:web" className="form-control  p-2 mb-4" value={type} onChange={(e)=>setType(e.target.value)}/>
         <button className="btn btn-success w-100 p-2">Add</button>
         {
         type==="" ||name===""?<p className="text-danger mt-4 fs-5">Iltimos to'ldiring</p> : <p
